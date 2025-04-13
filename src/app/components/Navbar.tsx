@@ -1,21 +1,16 @@
-'use client'
+'use client';
+import Link from 'next/link';
 
-import Link from 'next/link'
-
-export default function Navbar() {
+export const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-purple-600">
-          Kalavedika
-        </Link>
-        <div className="space-x-6 hidden md:flex">
-          <Link href="/events" className="hover:text-purple-500">Events</Link>
-          <Link href="/gallery" className="hover:text-purple-500">Gallery</Link>
-          <Link href="/team" className="hover:text-purple-500">Team</Link>
-          <Link href="/contact" className="hover:text-purple-500">Contact</Link>
-        </div>
-      </div>
+    <nav className="w-full flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0 z-50">
+      <h1 className="text-xl font-bold">Logo</h1>
+      <ul className="flex gap-6 text-base">
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/services">Services</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+      </ul>
     </nav>
-  )
-}
+  );
+};

@@ -1,26 +1,37 @@
 // app/layout.tsx
-import './globals.css'
-import type { Metadata } from 'next'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import "./globals.css";
+import { Roboto } from "next/font/google";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
+const roboto = Roboto({ subsets: ["latin"], weight: "700" });
 
 export const metadata: Metadata = {
-  title: 'Kalavedika',
-  description: 'College Cultural Fest Website',
-}
+  title: "Cultural Committee",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+backgroundImage: "url('/cultural-bg.jpg')"
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className={roboto.className}>
+        <div className="fade-in">
+          <div
+            style={{
+              backgroundImage: "url('/cultural-bg.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              minHeight: "100vh",
+            }}
+          >
+            {children}
+          </div>
+        </div>
       </body>
     </html>
-  )
+  );
 }
