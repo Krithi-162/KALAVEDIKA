@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className="fade-in">
           <div
             style={{
-              backgroundImage: "url('/cultural-bg.jpg')",
+              backgroundImage: "url('/cultural-bg.jpeg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               minHeight: "100vh",
