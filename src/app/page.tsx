@@ -10,13 +10,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className="min-h-screen w-full bg-[#d79900] font-['Roboto'] flex flex-col bg-[url('/cultural-bg.jpeg')] bg-cover bg-center"
-    >
+<div className="relative min-h-screen w-full font-['Roboto'] flex flex-col overflow-hidden">
+  {/* Blurred + semi-transparent background image */}
+  <div className="absolute inset-0 bg-[url('/cultural-bg.jpeg')] bg-cover bg-center blur opacity-65 z-0"></div>
+
       {/* Header */}
-      <header className="bg-white shadow-md px-4 md:px-8 py-4 flex justify-between items-center">
-        <div className="text-xl md:text-2xl font-bold text-gray-800">AJIET</div>
-        <nav className="hidden md:flex space-x-6 md:space-x-8">
+      <header className="bg-white shadow-md px-4 md:px-8 py-4 flex justify-between items-center bg-white/90 backdrop-blur-sm shadow-md px-4 md:px-8 py-4 flex justify-between items-center z-10">
+        <img src="/ajiet-logo.svg" alt="AJIET Logo" className="h-13 w-auto" />
+       <nav className="hidden md:flex space-x-6 md:space-x-8">
           <a href="#" className="text-gray-800 hover:text-gray-600 transition">
             Home
           </a>
@@ -33,11 +34,11 @@ export default function Home() {
       <main className="flex flex-col items-center justify-between flex-1 text-center px-4 py-16">
         {/* Title */}
         <h1
-          className={`text-3xl sm:text-4xl md:text-6xl text-white font-bold transition-opacity duration-1000 ease-in-out ${
-            mounted ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          CULTURAL COMMITTEE
+          className={`mt-33 text-3xl sm:text-4xl md:text-8xl text-white font-bold transition-opacity duration-1000 ease-in-out ${
+          mounted ? "opacity-98" : "opacity-0"
+         }`}
+>
+              CULTURAL COMMITTEE
         </h1>
 
         {/* Spacer to push buttons down */}
