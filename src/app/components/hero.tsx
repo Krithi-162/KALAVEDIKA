@@ -7,11 +7,11 @@ export default function Hero() {
     <div className="w-full h-screen bg-yellow-600 flex flex-col items-center justify-center text-white">
       {/* Title */}
       <h1 className="text-10xl font-bold mb-8 text-center">
-        CULTURAL COMMITTEE
+      Kalavedika
       </h1>
 
       {/* Buttons */}
-      <div className="flex gap-8">
+      <div className="flex gap-40">
         <Link href="/events">
           <button className="bg-gray-900 hover:bg-gray-700 text-white px-6 py-3 rounded-md text-lg">
             Events

@@ -31,31 +31,23 @@ export default function Home() {
       </header>
 
       {/* Main */}
-      <main className="flex flex-col items-center justify-between flex-1 text-center px-4 py-16">
+      <main className="flex flex-col items-center justify-between flex-1 text-center px-10 py-10">
         {/* Title */}
         <h1
           style={{ color: "#930a00" }}
-          className={`mt-30 text-2xl sm:text-4xl md:text-8xl font-bold transition-opacity duration-1000 ease-in-out ${
+          className={`mt-38 text-4xl sm:text-4xl md:text-8xl font-bold transition-opacity duration-1000 ease-in-out text-center ${
           mounted ? "opacity-98" : "opacity-0"
   }`}
 >
-  CULTURAL
-</h1>
-<h1
-          style={{ color: "#930a00" }}
-          className={`mt-20 text-2xl sm:text-4xl md:text-8xl font-bold transition-opacity duration-1000 ease-in-out ${
-          mounted ? "opacity-98" : "opacity-0"
-  }`}
->
-  COMMITTEE
+  KALAVEDIKA
 </h1>
         {/* Spacer to push buttons down */}
-        <div className="flex flex-col items-center mt-auto mb-12">
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-12">
-            <button className="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-600 transition-transform transform hover:scale-105 duration-300">
+        <div className="flex flex-col items-center mt-auto mb-30">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-40">
+            <button className="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-600 transition-transform transform hover:scale-105 duration-300">
               Events
             </button>
-            <button className="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-600 transition-transform transform hover:scale-105 duration-300">
+            <button className="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-600 transition-transform transform hover:scale-105 duration-300">
               Register
             </button>
           </div>
