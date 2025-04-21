@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className="w-full h-screen bg-yellow-600 flex flex-col items-center justify-center text-white">
       {/* Title */}
-      <h1 className="text-10xl font-bold mb-12">
+      <h1 className="text-10xl font-bold mb-8 text-center">
         CULTURAL COMMITTEE
       </h1>
 
