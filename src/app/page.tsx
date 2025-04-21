@@ -12,7 +12,7 @@ export default function Home() {
   return (
 <div className="relative min-h-screen w-full font-['Roboto'] flex flex-col overflow-hidden">
   {/* Blurred + semi-transparent background image */}
-  <div className="absolute inset-0 bg-[url('/cultural-bg.jpeg')] bg-cover bg-center blur opacity-65 z-0"></div>
+  <div className="absolute inset-0 bg-[url('/cultural-bg.jpg')] bg-cover bg-center  "></div>
 
       {/* Header */}
       <header className="bg-white shadow-md px-4 md:px-8 py-4 flex justify-between items-center bg-white/90 backdrop-blur-sm shadow-md px-4 md:px-8 py-4 flex justify-between items-center z-10">
