@@ -21,7 +21,7 @@ export default function Home() {
           <a href="#" className="text-gray-800 hover:text-gray-600 transition">
             Home
           </a>
-          <a href="#" className="text-gray-800 hover:text-gray-600 transition">
+          <a href="/about" className="text-gray-800 hover:text-gray-600 transition">
             About
           </a>
           <a href="#" className="text-gray-800 hover:text-gray-600 transition">
@@ -54,5 +54,6 @@ export default function Home() {
         </div>
       </main>
     </div>
+  
   );
 }
