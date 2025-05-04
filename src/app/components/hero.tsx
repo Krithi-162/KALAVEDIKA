@@ -4,6 +4,18 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
+    // hero.tsx
+
+ 
+    <div id="home" className="...">
+      {/* Your hero content */}
+ 
+      import Link from 'next/link';
+
+<Link href="/#home" scroll={true}>
+  Home
+</Link>
+
     <div className="w-full h-screen bg-yellow-600 flex flex-col items-center justify-center text-white">
       {/* Title */}
       <h1 className="text-10xl font-bold mb-8 text-center">
@@ -23,6 +35,7 @@ export default function Hero() {
           </button>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

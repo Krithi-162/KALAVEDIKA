@@ -1,40 +1,37 @@
+"use client";
 import React from 'react';
 
 export default function About() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen px-10 py-10 bg-white text-gray-800">
-      <h1 className="text-4xl font-bold mb-6 text-center">About Kalavedika</h1>
-      
-      <p className="max-w-3xl text-lg text-center mb-10">
-        Kalavedika is a vibrant platform dedicated to promoting cultural events,
-        artistic talents, and community engagements. We aim to bring together
-        individuals passionate about music, dance, literature, and art, fostering
-        a creative and inclusive environment.
-      </p>
+    <div className="relative min-h-screen w-full font-sans flex flex-col overflow-hidden">
 
-      {/* New Culture Section */}
-      <section className="max-w-4xl text-center">
-        <h2 className="text-3xl font-semibold mb-4">Celebrating Culture</h2>
-        <p className="text-lg mb-6">
-          Culture is the soul of a community, reflected through traditions, languages,
-          arts, festivals, and everyday practices. At Kalavedika, we cherish and showcase
-          these beautiful elements to keep our rich heritage alive and inspire future generations.
-        </p>
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('/about.jpg')] bg-cover bg-center -z-10"></div>
 
-        <h2 className="text-3xl font-semibold mb-4">Our Cultural Activities</h2>
-        <ul className="list-disc list-inside text-left mx-auto max-w-2xl text-lg mb-6">
-          <li>Traditional and folk dance performances</li>
-          <li>Music concerts blending classical and contemporary styles</li>
-          <li>Art exhibitions featuring local and national artists</li>
-          <li>Workshops on storytelling, handicrafts, and theatre</li>
-          <li>Celebrations of regional festivals and rituals</li>
-        </ul>
+      {/* Header */}
+      <header className="bg-white/90 backdrop-blur-sm shadow-md px-4 md:px-8 py-4 flex justify-between items-center z-10">
+        <img src="/ajiet-logo.svg" alt="AJIET Logo" className="h-15 w-auto" />
+        <nav className="hidden md:flex space-x-6 md:space-x-8">
+          <a href="/" className="text-gray-800 hover:text-gray-600 transition">Home</a>
+          <a href="/about" className="text-gray-800 hover:text-gray-600 transition">About</a>
+        </nav>
+      </header>
 
-        <p className="text-lg">
-          Through our events and initiatives, we aim to create a platform where creativity,
-          tradition, and innovation meet — celebrating the diversity and richness of our culture.
-        </p>
-      </section>
-    </main>
+      {/* Main Content */}
+      <main className="flex-1 flex items-center justify-center px-6 py-12 text-center">
+        <div className="bg-white/80 p-8 rounded-lg shadow-md max-w-3xl">
+          <h1 className="text-4xl font-bold mb-4 text-gray-900">About Kalavedika</h1>
+          <p className="text-gray-700 text-lg">
+            Kalavedika is a cultural platform created to encourage creativity, collaboration,
+            and celebration of art and talent at AJIET. Our goal is to bring students together through
+            meaningful experiences and cultural expressions.
+          </p>
+        </div>
+      </main>
+       {/* Footer always at the bottom */}
+       <footer className="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Your Project. All rights reserved.</p>
+      </footer>
+    </div>
   );
 }

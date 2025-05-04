@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 interface RootLayoutProps {
   children: ReactNode;
 }
-backgroundImage: "url('/cultural-bg.jpg')"
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
